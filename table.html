@@ -3,6 +3,19 @@
     <head>
         <Title>Student Academic Details</Title>
     </head>
+    <style>
+        table{
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #8a8a8a;
+        }
+    </style>
     <body>
         <table>
             <thead>
@@ -39,7 +52,50 @@
             </tbody>
         </table>
 
-
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>Code</th>
+                <th>Address</th>
+            </tr><br/>
+            <tr>
+                <td>India</td>
+                <td>IN</td>
+                <td>india@gmail.com</td>
+            </tr>
+            <tr>
+                <td>United States of America</td>
+                <td>USA</td>
+                <td>usa@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Japan</td>
+                <td>JPY</td>
+                <td>japan@gmail.com</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>CN</td>
+                <td>china@gmail.com</td>
+            </tr>
+        </table>
+        <table>
+            <colgroup>
+                <col span="2" style="background-color: blue;">
+            </colgroup>
+            <tr>
+                <th>Country</th>
+                <td>India</td>
+                <td>Japan</td>
+                <td>China</td>
+            </tr><br/>
+            <tr>
+                <th>Code</th>
+                <td>IN</td>
+                <td>JPY</td>
+                <td>CN</td>
+            </tr>
+        </table>
         
     </body>
 </html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/16546692/pexels-photo-16546692/free-photo-of-tapovan-ghat-rishikesh-uttarakhand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="">
+
+    <img src="developerr.png" alt="">
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="developerr.png"/>
+        <source media="(min-width: 450px)" srcset="developerr.png"/>
+        <img src="developerr.png" alt="">
+    </picture>
+
+    <!-- An Image Map Generator -->
+    <img src="1694751287061.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" target="" alt="" title="" href="" coords="414,344,487,302" shape="rect">
+        <area onclick="two()" target="" alt="" title="" href="" coords="404,304,330,344" shape="rect">
+    </map>
+
+    <script>
+        function one () {
+            alert("You Clicked On One")
+        }
+        function two () {
+            alert("You Clicked On Two")
+        }
+        one();
+        two()
+    </script>
+
+</body>
+</html>
